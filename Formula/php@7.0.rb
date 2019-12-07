@@ -6,7 +6,8 @@ class PhpAT70 < Formula
 
   bottle do
     root_url "https://dl.bintray.com/wong8369/homebrew-versions"
-    sha256 "30b19405bb74596e675c23f35d841b547f56a0453a3f1544e99f2d0697965311" => :mojave
+    rebuild 1
+    sha256 "99d8c1d1ce370116ba53532348c8adf3e3512d4fbc39526dd6958c1a2715f827" => :mojave
   end
 
   keg_only :versioned_formula
