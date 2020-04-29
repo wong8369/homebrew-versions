@@ -6,8 +6,8 @@ class PhpAT56 < Formula
 
   bottle do
    root_url "https://dl.bintray.com/wong8369/homebrew-versions"
-   #rebuild 2
-   sha256 "8ba85b33ddb13375556e1a91e4cf518441fcf62172ba2d43fd945a5f1a6e3dfe" => :mojave
+   rebuild 1
+   sha256 "58241b26523c710c92525bb46592e679b86fc6e3ed7ff8a27830978bcb2c80ed" => :mojave
   end
 
   keg_only :versioned_formula
@@ -24,7 +24,7 @@ class PhpAT56 < Formula
   depends_on "gettext"
   depends_on "glib"
   depends_on "gmp"
-  depends_on "icu4c"
+  depends_on "icu4c@64.2"
   depends_on "jpeg"
   depends_on "libpng"
   depends_on "libpq"
@@ -133,7 +133,7 @@ class PhpAT56 < Formula
       --with-gettext=#{Formula["gettext"].opt_prefix}
       --with-gmp=#{Formula["gmp"].opt_prefix}
       --with-iconv#{headers_path}
-      --with-icu-dir=#{Formula["icu4c"].opt_prefix}
+      --with-icu-dir=#{Formula["icu4c@64.2"].opt_prefix}
       --with-jpeg-dir=#{Formula["jpeg"].opt_prefix}
       --with-kerberos#{headers_path}
       --with-layout=GNU
